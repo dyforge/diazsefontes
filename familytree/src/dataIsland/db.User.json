@@ -1,0 +1,44 @@
+{
+  "User": [
+    {
+      "0": "nxk1598@mavs.uta.edu",
+      "1": "niraj",
+      "2": "kumar",
+      "3": "12345",
+      "4": "male",
+      "5": "1",
+      "6": "nxk1598@mavs.uta.edu",
+      "7": "admin",
+      "8": "22",
+      "email": "nxk1598@mavs.uta.edu",
+      "first_name": "niraj",
+      "last_name": "kumar",
+      "password": "12345",
+      "gender": "male",
+      "num_child": "1",
+      "ancestor_email": "nxk1598@mavs.uta.edu",
+      "role": "admin",
+      "age": "22"
+    },
+    {
+      "0": "asd@mavs.uta.edu",
+      "1": "Niraj",
+      "2": "Kumar",
+      "3": "54321",
+      "4": "male",
+      "5": "1",
+      "6": "asd@mavs.uta.edu",
+      "7": "",
+      "8": "22",
+      "email": "asd@mavs.uta.edu",
+      "first_name": "Niraj",
+      "last_name": "Kumar",
+      "password": "54321",
+      "gender": "male",
+      "num_child": "1",
+      "ancestor_email": "asd@mavs.uta.edu",
+      "role": "",
+      "age": "22"
+    }
+  ]
+}

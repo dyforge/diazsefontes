@@ -1,0 +1,84 @@
+#registration-page {
+  height:85vh;
+  background:white; 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:scroll;
+}
+#registration-page h3 {
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* letter-spacing: 4px; */
+  padding-left: 0.5em;
+}
+.signup-form  {
+  flex: 1;
+  max-width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.signup-form .form-header {
+  padding:15px 0;
+  border-bottom:1px solid #cccccc;
+}
+.signup-form .form-body {
+  background:white;
+  padding:5px 10px;
+}
+.signup-form .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.signup-form .input-group {
+  flex:1;  
+  display:flex;
+  margin: 10px 5px;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.signup-form label {
+  color:black;
+  font-size: 17px;
+  font-weight: 500;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+      font-size: 1em;
+      padding-left: 0.1em;
+      padding-right: 0.1em;
+      background: #ebeced;
+      height: 2.5em;
+}
+.signup-form .form-footer {
+  display:flex;
+  justify-content: flex-end;
+  padding-right: 1em;
+}
+.signup-form .btn {
+  padding:10px 20px;
+  background-color: black;
+  font-size: 1em;
+  color:white;
+  cursor:pointer;
+}
+@media only screen and (max-width: 768px) {
+  .signup-form .row{
+    flex-direction:column; 
+  }
+  .signup-form .input-group {
+  flex:1;  
+  display:flex;
+  margin: 10px 5px;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+  .signup-form .btn {
+      flex:1;
+  }
+}

@@ -1,0 +1,39 @@
+.homeScreenWrapper {
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.flashcards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flashcards > article {
+  transform: scaleX(1);
+  background: #ffffff;
+  box-shadow: 0 5px 25px #0052af80;
+  border-radius: 4px;
+  padding: 30px 20px 39px;
+  margin-right: 20px;
+  margin-top: 5rem;
+}
+
+.card {
+  transform: translate(0);
+  opacity: 1;
+  transition: all ease-out 0.6s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+@media only screen and (max-width: 767px) {
+  .flashcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

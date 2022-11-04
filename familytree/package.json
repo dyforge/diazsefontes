@@ -1,0 +1,66 @@
+{
+  "name": "familytree",
+  "homepage": "https://hxj0776.uta.cloud/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "cross-env": "^7.0.3",
+    "framer-motion": "^6.5.1",
+    "husky": "^8.0.1",
+    "loadash": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-tree-graph": "^7.0.3",
+    "typescript": "^4.7.4",
+    "underscore": "^1.13.4",
+    "web-vitals": "^2.1.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cross-env CI=true yarn test --silent && yarn && yarn lint"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start_server": "json-server -p 8000 -w src/dataIsland/db.User.json",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:fix": "eslint ./ --ext .js --ext .jsx --fix",
+    "lint": "eslint ./ --ext .js --ext .jsx",
+    "format:staged": "pretty-quick --staged",
+    "format": "pretty-quick"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "eslint": "^8.21.0",
+    "json-server": "^0.17.0",
+    "prettier": "^2.7.1",
+    "prettier-quick": "^0.0.5"
+  }
+}
